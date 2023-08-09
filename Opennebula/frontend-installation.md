@@ -82,6 +82,8 @@ touch authorized_keys
 
 chown -R oneadmin:oneadmin /var/lib/one/.ssh
 
+cat id_rsa.pub
+
 ```
 
 copy id_rsa.pub {kvm01} ---->to-----> {forntend}--------> authorized_keys
@@ -101,18 +103,6 @@ cat id_rs.pub
 ```
 copy id_rsa.pub {fronend node} ---->to-----> {kvm01}--------> authorized_keys
 
-- 03 - Goto kvm01 host and run:
-
-copy generated output to auhorized_keys file on {kvm01/var/lib/one/.ssh} to {frontend/var/lib/one/.ssh} with oneadmin permission
-
-```
-sudo su -
-su - oneadmin
-cd /var/lib/one/.ssh/authorized_keys
-cat id_rs.pub
-```
-
-copy id_rsa.pub {kvm01} ---->to-----> {forntend}--------> authorized_keys
 
 
 
