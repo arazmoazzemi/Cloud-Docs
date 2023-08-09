@@ -113,7 +113,7 @@ cd /var/lib/one/.ssh/authorized_keys
 cat id_rs.pub
 ```
 
-copy id_rsa.pub <node01>---->to-----> authorized_keys <fronend node>
+copy id_rsa.pub {kvm01} ---->to-----> {forntend}--------> authorized_keys
 
 
 
