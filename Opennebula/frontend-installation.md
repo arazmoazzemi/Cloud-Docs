@@ -40,10 +40,11 @@ sudo bash minione
 
 After Install opennebula on each node, The oneadmin user is automatically created on each node,
 which must have its own node access, and become a member of the **oneadmin** group, For example:
-`
+
+```
 sudo su -
 chown -R oneadmin:oneadmin /var/lib/one/.ssh 
-`
+```
 ****
 
 ***make sure the servers have passwordless authentication***
