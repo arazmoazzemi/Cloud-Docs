@@ -51,9 +51,9 @@ chown -R oneadmin:oneadmin /var/lib/one/.ssh
 ***make sure the servers have passwordless authentication***
 
 ****
-**Important Note!** 
+**Very Important Note!** 
 
-NOTE! ---> Make sure that authenticated key exist on /var/lib/one/.ssh folder on compute host 
+NOTE! ---> Make sure that authenticated keys created by **oneadmin** user and exists on **/var/lib/one/.ssh** folder on compute host 
 
 ```
 sudo su -
