@@ -63,7 +63,6 @@ sudo nano /etc/hostname
 
 ```
 
-<span style="color: green"> Some green text </span>
 
 **Very Important Note!** Just use oneadmin keys
 
