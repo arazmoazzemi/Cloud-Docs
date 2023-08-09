@@ -25,6 +25,7 @@ systemctl restart libvirtd
 
 
 **03-Get Frontend and KVM Node Cloud for evaluation**
+
  Run the following commands to deploy an evaluation cloud with a front-end and a single KVM node:
 
 ```
