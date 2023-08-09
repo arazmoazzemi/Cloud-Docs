@@ -1,8 +1,8 @@
 # Install opennebula fronend kvm ubuntu22.04.2
 
-**Install easy way**
+***Install easy way***
 
-**01-Get Frontend Only ---> run on frontend node** 
+***01-Get Frontend Only ---> run on frontend node***
 
 
 ```
@@ -12,7 +12,7 @@ wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
 sudo bash minione --frontend
 ```
 
-**02-Get Frontend Only for edge nodes ---> run on compute node**
+***02-Get Frontend Only for edge nodes ---> run on compute node***
 ```
 apt-get update
 apt-get -y install gnupg wget apt-transport-https
@@ -25,7 +25,7 @@ systemctl restart libvirtd
 ```
 
 
-**03-Get Frontend and KVM Node Cloud for evaluation ---> run on evaluation node**
+***03-Get Frontend and KVM Node Cloud for evaluation ---> run on evaluation node***
 
  Run the following commands to deploy an evaluation cloud with a front-end and a single KVM node:
 
@@ -36,7 +36,15 @@ wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
 sudo bash minione
 ```
 
+***make sure the servers have passwordless authentication***
 
+You can create key authetication on each node :
+`
+ssh-keygen -t rsa -b 2048
+`
+
+#Important Note! 
+After Install opennebula on each node, The oneadmin user is automatically created on each node, which must have its own node access, and become a member of the oneadmin group
 
 
 
