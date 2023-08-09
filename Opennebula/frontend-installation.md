@@ -84,7 +84,7 @@ cat id_rsa.pub
 # copy generated output to auhorized_keys file on {kvm01/var/lib/one/.ssh} to {frontend/var/lib/one/.ssh} with oneadmin permission
 
 ```
-after that, test this coonection with : `ssh oneadmin@frontend`
+after that, test this connection with : `ssh oneadmin@frontend`
 
 
 
@@ -103,7 +103,7 @@ cat id_rs.pub
 # copy generated output to auhorized_keys file on {fronend node/var/lib/one/.ssh} to {kvm01/var/lib/one/.ssh} with oneadmin permission
 ```
 
-after that, test this coonection with : `ssh oneadmin@frontend`
+after that, test this connection with : `ssh oneadmin@frontend`
 
 copy id_rsa.pub {fronend node} ---->to-----> {kvm01}--------> authorized_keys
 
