@@ -75,6 +75,24 @@ cat id_rs.pub
 
 
 
+**Important Note!** 
+
+Make sure that authenticated key exist on /var/lib/one/.ssh folder on compute host 
+
+
+sudo su -
+su - oneadmin
+ssh=keygen -t rsa -b 2048
+
+cd /var/lib/one/.ssh
+touch authorized_keys
+
+cat id_rsa.pub
+
+
+cd /var/lib/one.ssh/
+cat id_rsa.pub
+
 
 
 
