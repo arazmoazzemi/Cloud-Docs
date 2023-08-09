@@ -14,12 +14,13 @@ sudo bash minione --frontend
 
 ***02-Get Frontend Only for edge nodes ---> run on compute node***
 ```
-apt-get update
+apt-get update -y
+udo apt-get upgrade -y
 apt-get -y install gnupg wget apt-transport-https
 wget -q -O- https://downloads.opennebula.io/repo/repo2.key | apt-key add -
 wget -q -O- https://downloads.opennebula.io/repo/repo2.key | gpg --dearmor --yes --output /etc/apt/trusted.gpg.d/opennebula.gpg
 echo "deb https://downloads.opennebula.io/repo/6.6/Ubuntu/22.04 stable opennebula" > /etc/apt/sources.list.d/opennebula.list
-apt-get update
+apt-get update -y
 apt-get -y install opennebula-node-kvm
 systemctl restart libvirtd
 ```
