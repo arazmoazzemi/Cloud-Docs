@@ -2,7 +2,8 @@
 
 **Install easy way**
 
-**01-Get Frontend Only**
+**01-Get Frontend Only ---> run on frontend node** 
+
 
 ```
 sudo apt-get update -y
@@ -11,7 +12,7 @@ wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
 sudo bash minione --frontend
 ```
 
-**02-Get Frontend Only for edge nodes**
+**02-Get Frontend Only for edge nodes ---> run on compute node**
 ```
 apt-get update
 apt-get -y install gnupg wget apt-transport-https
@@ -24,7 +25,7 @@ systemctl restart libvirtd
 ```
 
 
-**03-Get Frontend and KVM Node Cloud for evaluation**
+**03-Get Frontend and KVM Node Cloud for evaluation ---> run on evaluation node**
 
  Run the following commands to deploy an evaluation cloud with a front-end and a single KVM node:
 
