@@ -48,7 +48,7 @@ chown -R oneadmin:oneadmin /var/lib/one/.ssh
 ```
 ****
 
-***make sure the servers have passwordless authentication, We create passwordless authentication with below codes: ***
+***make sure the servers have passwordless authentication, We create passwordless authentication with below codes:***
 
 ****
 
