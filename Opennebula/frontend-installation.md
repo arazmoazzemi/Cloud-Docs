@@ -53,7 +53,9 @@ chown -R oneadmin:oneadmin /var/lib/one/.ssh
 ****
 **Very Important Note!** 
 
-NOTE! ---> Make sure that authenticated keys created by **oneadmin** user and exists on **/var/lib/one/.ssh** folder on compute host 
+NOTE! ---> Make sure that authenticated keys created by **oneadmin** user and exists on **/var/lib/one/.ssh** folder on compute host (kvm01) 
+
+goto kvm01 host and run:
 
 ```
 sudo su -
