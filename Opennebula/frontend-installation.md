@@ -64,6 +64,14 @@ systemctl restart sshd
 
 ```
 
+***Copy generated keys on each node***
+
+frontend node
+
+sudo su -
+su - oneadmin
+cd /var/lib/one/.ssh/authorized_keys
+cat id_rs.pub
 
 
 
