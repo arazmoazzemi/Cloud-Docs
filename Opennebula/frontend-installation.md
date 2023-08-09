@@ -60,7 +60,7 @@ Make sure that authenticated keys created by **oneadmin** user and exists on **/
 ```
 sudo su -
 su - oneadmin
-ssh=keygen -t rsa -b 2048
+ssh-keygen -t rsa -b 2048
 
 cd /var/lib/one/.ssh
 touch authorized_keys
