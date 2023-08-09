@@ -12,7 +12,7 @@ wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
 sudo bash minione --frontend
 ```
 
-***02-Get opennebula-node-kvm Only for edge nodes ---> run on vm node***
+***02-Get opennebula-node-kvm Only for edge nodes ---> run on frontend node***
 ```
 sudo apt-get update -y
 sudo apt-get upgrade -y
