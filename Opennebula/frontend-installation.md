@@ -68,7 +68,9 @@ sudo nano /etc/hostname
 
 Make sure that authenticated keys created by **oneadmin** user and exists on **/var/lib/one/.ssh** folder on compute host (kvm01) 
 
-01 - Goto kvm01 host and run:
+- 01 - Goto kvm01 host and run:
+
+copy generated output to auhorized_keys file on {kvm01/var/lib/one/.ssh} to {frontend/var/lib/one/.ssh} with oneadmin permission
 
 ```
 sudo su -
@@ -80,15 +82,12 @@ touch authorized_keys
 
 chown -R oneadmin:oneadmin /var/lib/one/.ssh
 
-cat id_rsa.pub
-
-cd /var/lib/one.ssh/
-cat id_rsa.pub
-
 ```
-****
 
+copy id_rsa.pub {kvm01} ---->to-----> {forntend}--------> authorized_keys
+****
 ***Copy generated keys on each node***
+
 
 - 02 - Goto frontend host and run:
 
