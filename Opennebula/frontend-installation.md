@@ -50,9 +50,18 @@ chown -R oneadmin:oneadmin /var/lib/one/.ssh
 ***make sure the servers have passwordless authentication***
 
 You can create key authetication on each node :
-`
+```
+sudo passwd root <secret>
+sudo passwd -u rood
+
 ssh-keygen -t rsa -b 2048
-`
+
+nano /etc/ssh/sshd_config
+    set ---> PermitRoot Login yes
+
+systemctl restart sshd
+
+```
 
 
 
