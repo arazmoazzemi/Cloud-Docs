@@ -21,7 +21,7 @@ wget -q -O- https://downloads.opennebula.io/repo/repo2.key | apt-key add -
 wget -q -O- https://downloads.opennebula.io/repo/repo2.key | gpg --dearmor --yes --output /etc/apt/trusted.gpg.d/opennebula.gpg
 sudo echo "deb https://downloads.opennebula.io/repo/6.6/Ubuntu/22.04 stable opennebula" > /etc/apt/sources.list.d/opennebula.list
 sudo apt-get update -y
-sudoo apt-get -y install opennebula-node-kvm
+sudo apt-get -y install opennebula-node-kvm
 sudo systemctl restart libvirtd
 ```
 
