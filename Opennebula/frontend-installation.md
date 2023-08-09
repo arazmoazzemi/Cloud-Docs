@@ -53,7 +53,7 @@ chown -R oneadmin:oneadmin /var/lib/one/.ssh
 ****
 **Important Note!** 
 
-Make sure that authenticated key exist on /var/lib/one/.ssh folder on compute host 
+NOTE! ---> Make sure that authenticated key exist on /var/lib/one/.ssh folder on compute host 
 
 ```
 sudo su -
