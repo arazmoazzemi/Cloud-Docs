@@ -65,6 +65,8 @@ ssh=keygen -t rsa -b 2048
 cd /var/lib/one/.ssh
 touch authorized_keys
 
+chown -R oneadmin:oneadmin /var/lib/one/.ssh
+
 cat id_rsa.pub
 
 cd /var/lib/one.ssh/
