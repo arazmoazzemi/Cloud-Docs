@@ -89,10 +89,7 @@ copy id_rsa.pub {kvm01} ---->to-----> {forntend}--------> authorized_keys
 ****
 ***Copy generated keys on each node***
 
-
 - 02 - Goto frontend host and run:
-
-
 
 ```
 sudo su -
