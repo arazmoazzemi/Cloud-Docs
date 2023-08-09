@@ -1,6 +1,6 @@
 # Install opennebula fronend kvm ubuntu22.04.2
 
-**install easy way**
+**Install easy way**
 
 **Get Frontend Only**
 
