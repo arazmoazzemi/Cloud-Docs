@@ -51,6 +51,19 @@ chown -R oneadmin:oneadmin /var/lib/one/.ssh
 ***make sure the servers have passwordless authentication***
 
 ****
+
+***Add hostnames to all nodes, like below example:***
+
+```
+sudo nano /etc/hostname
+
+192.168.200.50 frontend
+192.168.200.51 kvm01
+192.168.200.52 storage
+
+```
+
+
 **Very Important Note!** 
 
 Make sure that authenticated keys created by **oneadmin** user and exists on **/var/lib/one/.ssh** folder on compute host (kvm01) 
