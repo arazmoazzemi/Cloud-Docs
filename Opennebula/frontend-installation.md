@@ -90,7 +90,7 @@ cat id_rsa.pub
 
 ***Copy generated keys on each node***
 
-02 - Goto frontend host and run:
+- 02 - Goto frontend host and run:
 
 copy generated output to auhorized_keys file on {fronend node/var/lib/one/.ssh} to {kvm01/var/lib/one/.ssh} with oneadmin permission
 
@@ -102,7 +102,7 @@ cat id_rs.pub
 ```
 copy id_rsa.pub {fronend node} ---->to-----> {kvm01}--------> authorized_keys
 
-03 - Goto kvm01 host and run:
+- 03 - Goto kvm01 host and run:
 
 copy generated output to auhorized_keys file on {fronend node/var/lib/one/.ssh} to {kvm01/var/lib/one/.ssh} with oneadmin permission
 
