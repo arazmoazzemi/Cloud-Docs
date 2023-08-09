@@ -35,6 +35,12 @@ sudo apt-get upgrade -y
 wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
 sudo bash minione
 ```
+****
+**Important Note!** 
+
+After Install opennebula on each node, The oneadmin user is automatically created on each node,
+which must have its own node access, and become a member of the **oneadmin** group
+****
 
 ***make sure the servers have passwordless authentication***
 
@@ -42,10 +48,6 @@ You can create key authetication on each node :
 `
 ssh-keygen -t rsa -b 2048
 `
-
-#Important Note! 
-After Install opennebula on each node, The oneadmin user is automatically created on each node, which must have its own node access, and become a member of the oneadmin group
-
 
 
 
