@@ -115,8 +115,7 @@ copy id_rsa.pub {fronend node} ---->to-----> {kvm01}--------> authorized_keys
 
 
 
-*Make a custom bridge netwok for opennebula-kvm-node*
-*For example :*
+*Make a custom bridge netwok for opennebula-kvm-node, For example:*
 
 ```
 touch /etc/netplan/minione.yaml
@@ -133,6 +132,30 @@ network:
     minionebr:
       addresses: [ 172.16.100.1/24 ]
       interfaces: [ minionebr-nic ]
+
+```
+
+*Make sure that enabled port forwarding:*
+
+```
+echo -e '\n#Enable IP Routing\nnet.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
+sysctl -p
+```
+
+*Enable Nat on minione interface*
+
+```
+iptables -F
+sudo iptables -L -v -n | more
+
+# check "netfilter-persistent save" "Saving iptables changes"
+apt-get install iptables-persistent
+netfilter-persistent save
+systemctl enable netfilter-persistent
+
+iptables -t nat -A POSTROUTING -o ens32 -j MASQUERADE
+iptables -A FORWARD -i ens32 -o minionebr -m state --state RELATED,ESTABLISHED -j ACCEPT
+iptables -A FORWARD -i minionebr -o ens32 -j ACCEPT
 
 ```
 
