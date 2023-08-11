@@ -115,6 +115,26 @@ copy id_rsa.pub {fronend node} ---->to-----> {kvm01}--------> authorized_keys
 
 
 
+*Make a custom bridge netwok for opennebula-kvm-node*
+*For example :*
+
+```
+touch /etc/netplan/minione.yaml
+sudo nano /etc/netplan/
+
+# add below codes:
+
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    minionebr-nic: {}
+  bridges:
+    minionebr:
+      addresses: [ 172.16.100.1/24 ]
+      interfaces: [ minionebr-nic ]
+
+```
 
 
 
