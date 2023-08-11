@@ -130,8 +130,11 @@ network:
     minionebr-nic: {}
   bridges:
     minionebr:
+      optional:
+        true
       addresses: [ 172.16.100.1/24 ]
       interfaces: [ minionebr-nic ]
+
 
 sudo netplay apply
 
