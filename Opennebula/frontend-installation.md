@@ -6,6 +6,7 @@
 
 
 ```
+sudo su -
 sudo apt-get update -y
 sudo apt-get upgrade -y
 wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
@@ -32,6 +33,7 @@ sudo systemctl restart libvirtd
  Run the following commands to deploy an evaluation cloud with a front-end and a single KVM node:
 
 ```
+sudo su -
 sudo apt-get update -y
 sudo apt-get upgrade -y
 wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
