@@ -14,6 +14,7 @@ sudo bash minione --frontend
 
 ***02-Get opennebula-node-kvm Only for edge nodes ---> run only on compute node***
 ```
+sudo su -
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get -y install gnupg wget apt-transport-https
