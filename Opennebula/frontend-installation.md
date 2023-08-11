@@ -151,7 +151,7 @@ sudo iptables -F
 sudo iptables -L -v -n | more
 
 # check "netfilter-persistent save" "Saving iptables changes"
-sudo apt-get install iptables-persistent
+sudo apt-get -y install iptables-persistent
 sudo netfilter-persistent save
 sudo systemctl enable netfilter-persistent
 
