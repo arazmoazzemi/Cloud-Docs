@@ -142,7 +142,7 @@ echo -e '\n#Enable IP Routing\nnet.ipv4.ip_forward = 1' | sudo tee -a /etc/sysct
 sysctl -p
 ```
 
-*Enable Nat on minione interface*
+*Enable Nat for minione interface*
 
 ```
 iptables -F
