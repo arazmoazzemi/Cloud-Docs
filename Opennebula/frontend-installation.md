@@ -138,24 +138,24 @@ network:
 *Make sure that enabled port forwarding:*
 
 ```
-echo -e '\n#Enable IP Routing\nnet.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
-sysctl -p
+sudo echo -e '\n#Enable IP Routing\nnet.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
 ```
 
 *Enable Nat for minione interface*
 
 ```
-iptables -F
+sudo iptables -F
 sudo iptables -L -v -n | more
 
 # check "netfilter-persistent save" "Saving iptables changes"
-apt-get install iptables-persistent
-netfilter-persistent save
-systemctl enable netfilter-persistent
+sudo apt-get install iptables-persistent
+sudo netfilter-persistent save
+sudo systemctl enable netfilter-persistent
 
-iptables -t nat -A POSTROUTING -o ens32 -j MASQUERADE
-iptables -A FORWARD -i ens32 -o minionebr -m state --state RELATED,ESTABLISHED -j ACCEPT
-iptables -A FORWARD -i minionebr -o ens32 -j ACCEPT
+sudo iptables -t nat -A POSTROUTING -o ens32 -j MASQUERADE
+sudo iptables -A FORWARD -i ens32 -o minionebr -m state --state RELATED,ESTABLISHED -j ACCEPT
+sudo iptables -A FORWARD -i minionebr -o ens32 -j ACCEPT
 
 ```
 
