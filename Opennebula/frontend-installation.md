@@ -119,7 +119,7 @@ copy id_rsa.pub {fronend node} ---->to-----> {kvm01}--------> authorized_keys
 
 ```
 touch /etc/netplan/minione.yaml
-sudo nano /etc/netplan/
+sudo nano /etc/netplan/minione.yaml
 
 # add below codes:
 
