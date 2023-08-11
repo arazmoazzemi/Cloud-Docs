@@ -12,7 +12,7 @@ Note! Opennebula minione way installation, needed least 30G disk or 20G free dis
 sudo su -
 sudo apt-get update -y
 sudo apt-get upgrade -y
-wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
+sudo wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
 sudo bash minione --frontend
 ```
 
