@@ -1,6 +1,6 @@
-# Latest Installation wirh devstack
+#Latest Installation wirh devstack
 
-# https://docs.openstack.org/devstack/latest/guides/single-machine.html
+#https://docs.openstack.org/devstack/latest/guides/single-machine.html
 
 ```
 sudo useradd -s /bin/bash -d /opt/stack -m stack
