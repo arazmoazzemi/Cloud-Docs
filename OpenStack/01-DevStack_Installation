@@ -2,8 +2,8 @@
 
 # https://docs.openstack.org/devstack/latest/guides/single-machine.html
 
-
-```sudo useradd -s /bin/bash -d /opt/stack -m stack
+```
+sudo useradd -s /bin/bash -d /opt/stack -m stack
 
 sudo chmod +x /opt/stack
 
@@ -15,7 +15,7 @@ sudo passwd stack <secret>
 ```
 
 
-***Note! From here on you should use the user you created. Logout and login as that user:***
+*Note! From here on you should use the user you created. Logout and login as that user:*
 
 ```
 sudo apt-get install git -y || sudo yum install -y git
