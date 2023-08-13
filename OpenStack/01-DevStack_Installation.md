@@ -10,8 +10,6 @@ sudo chmod +x /opt/stack
 apt-get install sudo -y || yum install -y sudo
 echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack
 
-
-sudo passwd stack <secret>
 ```
 
 
