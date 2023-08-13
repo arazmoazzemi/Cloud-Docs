@@ -4,9 +4,7 @@
 
 ```
 sudo useradd -s /bin/bash -d /opt/stack -m stack
-
 sudo chmod +x /opt/stack
-
 apt-get install sudo -y || yum install -y sudo
 echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack
 
@@ -21,9 +19,8 @@ sudo apt-get install git -y || sudo yum install -y git
 git clone https://opendev.org/openstack/devstack
 cd devstack
 
-
+# Make config file:
 nano local.conf
-
 
 [[local|localrc]]
 FLOATING_RANGE=192.168.1.224/27
