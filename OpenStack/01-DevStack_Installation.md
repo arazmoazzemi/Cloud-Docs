@@ -19,7 +19,7 @@ sudo apt-get install git -y || sudo yum install -y git
 git clone https://opendev.org/openstack/devstack
 cd devstack
 
-# Make config file:
+# Make a config file:
 nano local.conf
 
 [[local|localrc]]
