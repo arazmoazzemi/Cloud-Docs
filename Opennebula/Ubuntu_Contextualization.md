@@ -1,3 +1,5 @@
+
+```
 CONTEXT = [
   NETWORK = "YES",
   USERNAME = root,
@@ -23,4 +25,4 @@ NIC_DEFAULT = [
   MODEL = "virtio" ]
 OS = [
   ARCH = "x86_64" ]
-
+```
