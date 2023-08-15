@@ -12,10 +12,7 @@ touch /etc/machine id
 # Create an empty file to prevent the service from starting
 sudo touch /etc/cloud/cloud-init.disabled
 
-
-# Uninstall
-
-sudo dpkg-reconfigure cloud-init
+# Uninstall cloud-init
 
 sudo dpkg-reconfigure cloud-init
 sudo apt-get purge cloud-init
