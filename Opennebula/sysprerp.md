@@ -1,9 +1,10 @@
 
+*Remove Machine ID*
 
-
+```
 rm /etc/machine-id
 touch /etc/machine id
-
+```
 
 
 
