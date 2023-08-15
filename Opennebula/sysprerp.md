@@ -31,7 +31,6 @@ sudo reboot
 apt --fix-broken install
 wget https://github.com/OpenNebula/addon-context-linux/releases/download/v6.6.1/one-context_6.6.1-1.deb
 dpkg -i one-context_6.6.1-1.deb
-
 apt autoremove
 ```
 
