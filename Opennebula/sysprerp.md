@@ -1,5 +1,5 @@
 
-*Remove Machine ID*
+*Remove Machine ID:*
 
 ```
 rm /etc/machine-id
