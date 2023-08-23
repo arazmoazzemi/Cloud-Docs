@@ -14,7 +14,7 @@ sudo wget 'https://github.com/OpenNebula/minione/releases/latest/download/minion
 sudo bash minione --frontend
 ```
 
-- 02-Get opennebula-node-kvm Only for **edge** nodes ---> run only on **compute** node
+* 02-Get opennebula-node-kvm Only for **edge** nodes ---> run only on **compute** node
   
 ```bash
 sudo su -
@@ -29,7 +29,7 @@ sudo apt-get -y install opennebula-node-kvm
 sudo systemctl restart libvirtd
 ```
 
-- 03-Get both, Frontend and KVM Node Cloud for evaluation ---> run on **evaluation** node
+* 03-Get both, Frontend and KVM Node Cloud for evaluation ---> run on **evaluation** node
 
 Run the following commands to deploy an evaluation cloud with a front-end and a single KVM node:
 
@@ -72,7 +72,7 @@ sudo nano /etc/hostname
 
 Make sure that authenticated keys created by **oneadmin** user and exists on **/var/lib/one/.ssh** folder on compute host (kvm01) 
 
-- 01 - Goto kvm01 host and run:
+* 01 - Goto kvm01 host and run:
 
 ```
 sudo su -
