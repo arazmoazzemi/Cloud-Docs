@@ -2,7 +2,7 @@
 
 __Install easy way__
 
-### Note! Opennebula minione way installation, needed least 30G disk or 20G free disk space for /var/ folder
+#### Note! Opennebula minione way installation, needed least 30G disk or 20G free disk space for /var/ folder
 
 - 01-Get Frontend Only ---> run on **frontend** node
 
@@ -29,12 +29,11 @@ sudo apt-get -y install opennebula-node-kvm
 sudo systemctl restart libvirtd
 ```
 
-
-- ***03-Get both, Frontend and KVM Node Cloud for evaluation ---> run on evaluation node***
+- 03-Get both, Frontend and KVM Node Cloud for evaluation ---> run on **evaluation** node
 
  Run the following commands to deploy an evaluation cloud with a front-end and a single KVM node:
 
-```
+```bash
 sudo su -
 sudo apt-get update -y
 sudo apt-get upgrade -y
