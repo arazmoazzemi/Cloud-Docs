@@ -31,7 +31,7 @@ sudo systemctl restart libvirtd
 
 - 03-Get both, Frontend and KVM Node Cloud for evaluation ---> run on **evaluation** node
 
- Run the following commands to deploy an evaluation cloud with a front-end and a single KVM node:
+Run the following commands to deploy an evaluation cloud with a front-end and a single KVM node:
 
 ```bash
 sudo su -
@@ -41,18 +41,18 @@ wget 'https://github.com/OpenNebula/minione/releases/latest/download/minione'
 sudo bash minione
 ```
 ****
-**Important Note!** 
+__Important Note!__
 
 After Install opennebula on each node, The oneadmin user is automatically created on each node,
 which must have its own node access, and become a member of the **oneadmin** group, For example:
 
-```
+```bash
 sudo su -
 chown -R oneadmin:oneadmin /var/lib/one/.ssh 
 ```
 ****
 
-***make sure the servers have passwordless authentication, We create passwordless authentication with below codes:***
+__make sure the servers have passwordless authentication, We create passwordless authentication with below codes__
 
 ****
 
