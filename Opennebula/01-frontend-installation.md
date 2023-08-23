@@ -5,7 +5,7 @@ __Install easy way__
 Note! Opennebula minione way installation, needed least 30G disk or 20G free disk space for /var/ folder
 
 
-- ***01-Get Frontend Only ---> run on frontend node***
+- ___01-Get Frontend Only ---> run on frontend node___
 
 
 ```
