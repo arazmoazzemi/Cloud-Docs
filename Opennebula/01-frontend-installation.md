@@ -8,7 +8,7 @@ Note! Opennebula minione way installation, needed least 30G disk or 20G free dis
 - 01-Get Frontend Only ---> run on **frontend** node
 
 
-```
+```bash
 sudo su -
 sudo apt-get update -y
 sudo apt-get upgrade -y
