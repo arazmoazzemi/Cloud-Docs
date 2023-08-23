@@ -1,6 +1,6 @@
 # Install opennebula fronend kvm ubuntu22.04.2
 
-***Install easy way***
+__Install easy way__
 
 Note! Opennebula minione way installation, needed least 30G disk or 20G free disk space for /var/ folder
 
