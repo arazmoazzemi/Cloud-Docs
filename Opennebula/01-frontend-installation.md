@@ -2,11 +2,9 @@
 
 __Install easy way__
 
-Note! Opennebula minione way installation, needed least 30G disk or 20G free disk space for /var/ folder
-
+### Note! Opennebula minione way installation, needed least 30G disk or 20G free disk space for /var/ folder
 
 - 01-Get Frontend Only ---> run on **frontend** node
-
 
 ```bash
 sudo su -
@@ -16,8 +14,9 @@ sudo wget 'https://github.com/OpenNebula/minione/releases/latest/download/minion
 sudo bash minione --frontend
 ```
 
-- ***02-Get opennebula-node-kvm Only for edge nodes ---> run only on compute node***
-```
+- 02-Get opennebula-node-kvm Only for **edge** nodes ---> run only on **compute** node
+  
+```bash
 sudo su -
 sudo apt-get update -y
 sudo apt-get upgrade -y
