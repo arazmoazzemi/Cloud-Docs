@@ -31,7 +31,7 @@
 
 ----
 
-[DevStack Installaton](https://docs.openstack.org/devstack/latest/guides/single-machine.html) Guide
+Guide [DevStack Installaton](https://docs.openstack.org/devstack/latest/guides/single-machine.html) :bowtie:
 
 ```
 sudo useradd -s /bin/bash -d /opt/stack -m stack
