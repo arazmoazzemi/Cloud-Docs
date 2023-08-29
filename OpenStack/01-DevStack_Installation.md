@@ -20,31 +20,15 @@ Kolla / Kolla-Ansible
 
 TripleO
 
+OpenStack-Helm
 
 
 
 
 
 
-6
 
 
-
-7
-
-
-
-📌 توجه: ابزارهای SaltStack و Puppent و Check هم مثل ابزار Ansible یک ساختار Client/Serverی دارند و از طریق یک automation configuration file پیکربندی شده شبیه به playbookها در Ansible، پیکربندی های را بر روی سرورها اعمال می کنند.
-
-
-
-♻️ نصب و راه اندازی Open Stack در محیط های Containerization
-
-
-
-8️⃣ نصب OpenStack توسط Kolla
-
-ممکن است شما نیاز به نصب OpenStack در محیط های Conternization همچون Docker داشته باشید. برای این منظور یک Community Open Source به نام Kolla یکسری containerهای آماده و از پیش ساخته شده برای نصب OpenStack در Docker به همراه یکسری ابزارها از جمله Kolla-Ansible (جهت فرهم کردن Ansible playbookها و پیاده سازی Kolla imageها)، Kayobe (ابزاری می تواند برای شما containerهای OpenStack را به صورت bare metal با استفاده از Kolla و Kolla Ansible و Bifrosft پیاده سازی نماید) را ارائه نموده است.
 
 
 
