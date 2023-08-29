@@ -2,17 +2,17 @@
 
 ----
 
-All-In-One or OpenStack AIO:
+- All-In-One or OpenStack AIO:
 
-DevStack and Packstack
+- DevStack and Packstack
 
-Openstack-Ansible
+- Openstack-Ansible
 
-SaltStack OpenStack
+- SaltStack OpenStack
 
-Puppet
+- Puppet
 
-Chef
+- Chef
 
 Containerization
 
