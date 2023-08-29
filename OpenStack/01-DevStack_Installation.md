@@ -1,6 +1,6 @@
 # Devstack, Latest Installation
 
-### Openstack installation methods:
+### *Openstack installation methods:*
 
 - All-In-One or OpenStack AIO:
 
