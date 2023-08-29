@@ -14,15 +14,21 @@ Puppet
 
 Chef
 
+Containerization
+
+Kolla / Kolla-Ansible
 
 
 
 
-6️⃣ نصب OpenStack از طریق Puppet
 
 
 
-7️⃣ نصب OpenStack از طریق Chef 
+6
+
+
+
+7
 
 
 
