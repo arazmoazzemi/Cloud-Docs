@@ -10,13 +10,11 @@ Openstack-Ansible
 
 SaltStack OpenStack
 
+Puppet
 
 
 
 
-
-
-5️⃣ نصب OpenStack از طریق SaltStack OpenStack
 
 
 
