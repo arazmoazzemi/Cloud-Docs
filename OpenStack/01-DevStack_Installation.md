@@ -24,6 +24,8 @@ OpenStack-Helm
 
 Fuel OpenStack (GUI- Single node - Multi-node (non-HA) -  Multi-node (HA) )
 
+OpenStack Autopilot
+
 
 
 
