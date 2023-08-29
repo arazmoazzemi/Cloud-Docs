@@ -6,22 +6,11 @@ All-In-One or OpenStack AIO:
 
 DevStack and Packstack
 
-
-
-2️⃣ نصب به صورت All-In-One یا OpenStack AIO: در این روش یکسری از Core Componentهای مهم (از جمله: Keystone و Glance و Nova و Neutron و Cinder و Swift و Heat و Horizon و Ceilometer) که در بسیاری از زیرساخت های OpenStack شاهد آنها هستید به صورت خودکار نصب می شوند. این روش نصب در محیط Production پیشنهاد نشده و صرفاً برای محیط های لابراتوار می باشد. هر چند جمله اخیر وحی منزل نیست، به عبارتی اگر شما یک تازه کار محیط OpenStack Cloud هستید، بهتر است روش نصب Manual را یاد بگیرید ولی اگر این روش را بارها تکرار کرده و از اتفاقاتی که در background بین سرویس ها و کامپوننت ها در جریان است اطلاع و اشراف کامل دارید حتی می تونید در محیط های Production در صورتیکه همه چیز را تحت کنترل دارید نیز از روش All-In-One جهت تسریع و تسهیل پروسه Installation استفاده نمایید. روش All-In-One را می توانید بر روی یک Single-Host در محیط LAB به سرعت انجام دهید و یا حتی آن را به محیط های Multi-Node نیز تعمیم دهید.
-
-
-
-3️⃣ نصب از طریق ابزارهای اتوماتیک سازی از جمله DevStack و Packstack: در واقع این ابزارها اسکریپت ها نصب خودکار هستند که توسط یکسری از Communityهای OpenStack ارائه شده و پشتیبانی می شوند تا مراحل نصب را برای شما ساده نمایند. معمولاً استفاده از این روش ها نیز در محیط های Production پیشنهاد نمی شود، اما در صورتیکه به پروسه ای که در background از اجرای این اسکریپت ها اتفاق می افتد آگاهی کامل دارید می توانید در محیط های عملیاتی نیز از آنها استفاده نمایید. لازم به ذکر که از ابزار Packstack صرفاً در توزیع های RedHat-based همچون RHEL، CentOS و Fedora می توانید استفاده کنید. اما توسط DevStack شما می توانید OpenStack را بر روی توزیع های RedHat-based و Debian-based از طریق repository معروف git master نصب نمایید.
+Openstack-Ansible
 
 
 
-No alt text provided for this image
-♻️ نصب OpenStack از طریق ابزارهای Configuration Automation Management Tool
 
-
-
-ابزارهای زیادی برای اتوماتیک سازی روال های کاری نصب سرویس ها، پیکربندی آنها و... بر روی چند Node در لینوکس وجود دارند که از جمله مهمترین این ابزارها می توان به Ansible و Puppept و Saltstack و Cehf اشاره نمود.
 
 
 
