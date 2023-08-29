@@ -31,6 +31,8 @@
 
 ----
 
+### All-In-One / DevStack:
+
 :one: Guide [DevStack Installaton](https://docs.openstack.org/devstack/latest/guides/single-machine.html) 
 
 ```
