@@ -14,19 +14,19 @@
 
 - Chef
 
-Containerization
+- Containerization
 
-Kolla / Kolla-Ansible
+- Kolla / Kolla-Ansible
 
-TripleO / OpenStack-On-OpenStack
+- TripleO / OpenStack-On-OpenStack
 
-OpenStack-Helm
+- OpenStack-Helm
 
-Fuel OpenStack (GUI- Single node - Multi-node (non-HA) -  Multi-node (HA) )
+- Fuel OpenStack (GUI- Single node - Multi-node (non-HA) -  Multi-node (HA) )
 
-OpenStack Autopilot
+- OpenStack Autopilot
 
-Juju
+- Juju
 
 
 ----
