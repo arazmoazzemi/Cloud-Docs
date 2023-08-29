@@ -18,6 +18,8 @@ Containerization
 
 Kolla / Kolla-Ansible
 
+TripleO
+
 
 
 
