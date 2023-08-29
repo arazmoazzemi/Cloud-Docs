@@ -8,15 +8,11 @@ DevStack and Packstack
 
 Openstack-Ansible
 
+SaltStack OpenStack
 
 
 
 
-
-
-4️⃣ نصب OpenStack از طریق Openstack-Ansible
-
-ابزار Ansible یکی از ابزارهای اتوماتیک سازی زیرساخت است که می تواند پیکربندی سیستم ها، نصب نرم افزارها و orchestrate کردن بیشتر taskهای پیشرفته IT در پروسه های نصب و یا بروزرسانی به صورت Zero downtime rolling updates را انجام دهد. هر چند هدف اصلی Ansible ساده سازی پروسه های نصب و اصطلاحاً ease-of-use کردن آنهاست اما تمرکز قوی ای بر روی بحث امنیت (Security) و قابلیت اطمینان (Reliability) دارد. همچنین OpenStack-Ansible نیز یک پروژه رسمی OpenStack است که از اهداف آن نصب OpenStack در محیط های Production از Source بوده به صورتیکه سادگی، بروزرسانی، رشد و توسعه پذیری این ساختار را نیز مد نظر دارد. اما مهمترین مزیت استفاده از Ansible استفاده از آن در معماری agent-less است.
 
 
 
