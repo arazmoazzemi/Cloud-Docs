@@ -22,6 +22,7 @@ TripleO / OpenStack-On-OpenStack
 
 OpenStack-Helm
 
+Fuel OpenStack (GUI- Single node - Multi-node (non-HA) -  Multi-node (HA) )
 
 
 
@@ -33,7 +34,8 @@ OpenStack-Helm
 
 
 
-در واقع TripleO یکی از راهکارهای Community معروف RDO است که محصول Packstack را نیز ارائه کرده است. TripleO بع معنی OpenStack-On-OpenStack بوده و با هدف نصب، بروزرسانی و عملیاتی کردن OpenStack Cloudها بر روی خود OpenStack Cloud توسعه داده شده است. این مدل از پیاده سازی OpenStack دارای معماری خاص خود است و نیازمند راه اندازی Undercloud (یک operator واقعی جهت پیاده سازی Cloud) شامل کامپوننت های اصلی OpenStack از جمله Nova و Neutron و Heat و... به صورت اتوماتیک و پیاده سازی و مدیریت یک Overcloud (یک tenant واقعی از workload cloud) می باشد. در واقع Overcloud عملیات deploy کردن solution و ارائه یک Cloud با اهداف مختلف (از جمله Production و Test و...) را برعهده دارد. همچنین operator نیز می تواند هر یک از Overcloud Roleهای موجود (از جمله: controller و compute و...) را که می خواهد آنها را در محیط پیاده سازی نماید، انتخاب کند.
+
+
 
 
 
