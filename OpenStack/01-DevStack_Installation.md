@@ -33,7 +33,7 @@
 
 ### All-In-One / DevStack:
 
-:one: Guide [DevStack Installaton](https://docs.openstack.org/devstack/latest/guides/single-machine.html) 
+:one: [DevStack Installaton](https://docs.openstack.org/devstack/latest/guides/single-machine.html) Guide
 
 ```sh
 sudo useradd -s /bin/bash -d /opt/stack -m stack
