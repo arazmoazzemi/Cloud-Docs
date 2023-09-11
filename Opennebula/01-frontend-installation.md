@@ -99,7 +99,7 @@ copy id_rsa.pub {kvm01} ---->to-----> {forntend}--------> authorized_keys
 
 - 02 - Goto frontend host and run:
 
-```
+```bash
 sudo su -
 su - oneadmin
 cd /var/lib/one/.ssh/authorized_keys
@@ -115,7 +115,7 @@ copy id_rsa.pub {fronend node} ---->to-----> {kvm01}--------> authorized_keys
 
 *Make a custom bridge netwok for opennebula-kvm-node, For example:*
 
-```
+```bash
 touch /etc/netplan/minione.yaml
 nano /etc/netplan/minione.yaml
 
@@ -140,14 +140,14 @@ sudo netplay apply
 
 *Make sure that enabled port forwarding:*
 
-```
+```bash
 sudo echo -e '\n#Enable IP Routing\nnet.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
 ```
 
 *Enable Nat for minione interface*
 
-```
+```bash
 sudo iptables -F
 sudo iptables -L -v -n | more
 
@@ -165,7 +165,7 @@ sudo iptables -A FORWARD -i minionebr -o ens32 -j ACCEPT
 
 *Context example for ubuntu22.04 images*
 
-```
+```bash
 CONTEXT = [
   NETWORK = "YES",
   USERNAME = root,
