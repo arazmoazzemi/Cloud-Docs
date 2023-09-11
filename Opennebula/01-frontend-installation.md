@@ -58,7 +58,7 @@ __make sure the servers have passwordless authentication, We create passwordless
 
 ***Add hostnames to all nodes, like below example:***
 
-```
+```bash
 sudo nano /etc/hostname
 
 192.168.200.50 frontend
