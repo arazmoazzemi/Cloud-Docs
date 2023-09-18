@@ -194,6 +194,14 @@ OS = [
 
 ```
 
+### Note! After install and update images if facw with below info:
+
+- ***A start job is running for wait for network to be configured.***
+```bash
+sudo systemctl disable NetworkManager-wait-online.service
+sudo systemctl mask systemd-networkd-wait-online.service
+```
+
 
 
 
