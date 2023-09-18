@@ -194,7 +194,7 @@ OS = [
 
 ```
 
-### Note! After install and update images if facw with below info:
+### Note! After install and update images if face with below info:
 
 - ***A start job is running for wait for network to be configured.***
 ```bash
