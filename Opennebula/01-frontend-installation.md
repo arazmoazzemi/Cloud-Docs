@@ -206,11 +206,3 @@ sudo systemctl mask systemd-networkd-wait-online.service
 
 
 
-
-
-
-
-
-
-
-
