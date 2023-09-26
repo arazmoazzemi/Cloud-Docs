@@ -32,7 +32,7 @@ apt autoremove
 ```
 
 *Clear bash history:*
-```
+```bash
 # root 
 sudo cat /dev/null > ~/.bash_history && history -c -w && exit
 # user
