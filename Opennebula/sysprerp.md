@@ -8,7 +8,7 @@ touch /etc/machine id
 
 *Disable cloud-init from ubuntu, Beacuse its maybe conflict with opennebula one-context:*
 
-```
+```bash
 # Create an empty file to prevent the service from starting
 sudo touch /etc/cloud/cloud-init.disabled
 
