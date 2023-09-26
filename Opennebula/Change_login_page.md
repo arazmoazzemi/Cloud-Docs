@@ -1,6 +1,6 @@
 
 
-```
+```bash
 ----------------------------Login Page---------------------------------------------------
 # upload path
 /usr/lib/one/sunstone/public/images
