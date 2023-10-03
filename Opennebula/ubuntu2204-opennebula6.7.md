@@ -53,10 +53,9 @@ systemctl restart opennebula opennebula-sunstone opennebula-fireedge
 ```bash
 apt-get -y install opennebula-node-kvm
 	
-
-su - oneadmin
-ssh-copy-id -i /var/lib/one/.ssh/id_rsa.pub cloud
-scp -p /var/lib/one/.ssh/id_rsa <node1>:/var/lib/one/.ssh/
+# su - oneadmin
+# ssh-copy-id -i /var/lib/one/.ssh/id_rsa.pub cloud
+# scp -p /var/lib/one/.ssh/id_rsa <node1>:/var/lib/one/.ssh/
 
 ```
 ----
