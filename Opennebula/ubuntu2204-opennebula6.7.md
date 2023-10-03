@@ -60,6 +60,13 @@ apt-get -y install opennebula-node-kvm
 ```
 ----
 
+### - Add KVMnode with CLI:
+
+```bash
+onehost create <node01> -i kvm -v kvm
+```
+
+
 #### - Make sure that enabled port forwarding:
 
 ```bash
