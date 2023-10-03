@@ -34,21 +34,16 @@ default ports:
 
 ```
 
+- FireEdge configuration:🔥 
 
+```bash
 nano /etc/one/sunstone-server.conf
 
+http://<OPENNEBULA-FRONTEND-IP-ADDRESS>:2616
+```
 
 
 
-
-------------
-
-apt-get -y install python3-pip
-pip3 install 'cryptography<3.4'
-pip3 install 'ansible>=2.8.0,<2.10.0'
-pip3 install 'Jinja2>=2.10.0'
-curl 'https://releases.hashicorp.com/terraform/0.14.7/terraform_0.14.7_linux_amd64.zip' | zcat >/usr/bin/terraform
-chmod 0755 /usr/bin/terraform
 
 ---------------
 
