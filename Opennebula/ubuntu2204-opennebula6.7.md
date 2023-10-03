@@ -65,9 +65,30 @@ sudo sysctl -p
 - Create a bidge network:
 
 ```bash
+touch /etc/netplan/minione.yaml
+nano /etc/netplan/minione.yaml
+
+# add below codes:
+
+network:
+  version: 2
+  renderer: networkd
+  ethernets:
+    minionebr-nic: {}
+  bridges:
+    minionebr:
+      optional:
+        true
+      addresses: [ 172.16.100.1/24 ]
+      interfaces: [ minionebr-nic ]
 
 
+sudo netplan apply
+```
 
+- Enable Nat for minione interface:
+- 
+```bash
 sudo iptables -F
 sudo iptables -L -v -n | more
 
@@ -76,9 +97,9 @@ sudo apt-get -y install iptables-persistent
 sudo netfilter-persistent save
 sudo systemctl enable netfilter-persistent
 
-sudo iptables -t nat -A POSTROUTING -o ens33 -j MASQUERADE
-sudo iptables -A FORWARD -i ens33 -o minionebr -m state --state RELATED,ESTABLISHED -j ACCEPT
-sudo iptables -A FORWARD -i minionebr -o ens33 -j ACCEPT
+sudo iptables -t nat -A POSTROUTING -o ens32 -j MASQUERADE
+sudo iptables -A FORWARD -i ens32 -o minionebr -m state --state RELATED,ESTABLISHED -j ACCEPT
+sudo iptables -A FORWARD -i minionebr -o ens32 -j ACCEPT
 
 ```
 
