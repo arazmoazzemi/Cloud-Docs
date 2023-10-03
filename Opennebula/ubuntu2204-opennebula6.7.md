@@ -105,6 +105,8 @@ sudo apt-get -y install iptables-persistent
 sudo netfilter-persistent save
 sudo systemctl enable netfilter-persistent
 
+# Change with your right interfaces:
+
 sudo iptables -t nat -A POSTROUTING -o ens33 -j MASQUERADE
 sudo iptables -A FORWARD -i ens33 -o minionebr -m state --state RELATED,ESTABLISHED -j ACCEPT
 sudo iptables -A FORWARD -i minionebr -o ens33 -j ACCEPT
