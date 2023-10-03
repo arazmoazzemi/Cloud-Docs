@@ -3,6 +3,8 @@
 ----
 Note! Befor start your stup, Please enable nested virtualization on your host😊
 
+- Lets start:
+
 ```bash
 apt-get update -y
 apt-get upgrade -y
@@ -17,8 +19,9 @@ apt-get -y install opennebula opennebula-sunstone opennebula-fireedge opennebula
 systemctl start opennebula opennebula-sunstone opennebula-fireedge opennebula-gate opennebula-flow
 systemctl enable opennebula opennebula-sunstone opennebula-fireedge 
 
-
 cat /var/lib/one/.one/one_auth
+
+# Change password
 echo 'oneadmin:changeme123' > /var/lib/one/.one/one_auth
 
 # http://192.168.200.40:9869/
