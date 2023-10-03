@@ -42,8 +42,9 @@ default ports:
 
 ```bash
 nano /etc/one/sunstone-server.conf
-
 http://<OPENNEBULA-FRONTEND-IP-ADDRESS>:2616
+
+systemctl restart opennebula opennebula-sunstone opennebula-fireedge
 ```
 
 ----
