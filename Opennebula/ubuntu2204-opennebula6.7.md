@@ -5,7 +5,7 @@ Note! Befor start your stup, Please enable nested virtualization on your host�
 
 ### You can use chrony and set local timezone
 
-# - Lets start:
+#### - Lets start:
 
 ```bash
 apt-get update -y
@@ -38,7 +38,7 @@ default ports:
 
 ```
 
-- FireEdge configuration:🔥 
+#### - FireEdge configuration:🔥 
 
 ```bash
 nano /etc/one/sunstone-server.conf
@@ -47,7 +47,7 @@ http://<OPENNEBULA-FRONTEND-IP-ADDRESS>:2616
 ```
 
 ----
-- Install KVM node:
+#### - Install KVM node:
 
 ```bash
 apt-get -y install opennebula-node-kvm
@@ -60,7 +60,7 @@ scp -p /var/lib/one/.ssh/id_rsa <node1>:/var/lib/one/.ssh/
 ```
 ----
 
-Make sure that enabled port forwarding:
+#### - Make sure that enabled port forwarding:
 
 ```bash
 sudo echo -e '\n#Enable IP Routing\nnet.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
