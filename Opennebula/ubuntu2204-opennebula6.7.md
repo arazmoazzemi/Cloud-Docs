@@ -35,7 +35,6 @@ default ports:
 # http://192.168.200.40:9869/ ----> Frontend
 # http://192.168.200.40:2616/ ---->FireEdge
 
-
 ```
 
 #### - FireEdge configuration:🔥 
