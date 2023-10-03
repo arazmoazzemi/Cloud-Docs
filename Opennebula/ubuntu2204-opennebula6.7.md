@@ -3,6 +3,8 @@
 ----
 Note! Befor start your stup, Please enable nested virtualization on your host😊
 
+### You can use chrony and set local timezone
+
 - Lets start:
 
 ```bash
