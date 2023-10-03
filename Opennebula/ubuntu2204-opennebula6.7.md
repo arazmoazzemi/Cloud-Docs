@@ -57,6 +57,7 @@ scp -p /var/lib/one/.ssh/id_rsa <node1>:/var/lib/one/.ssh/
 ----
 
 Make sure that enabled port forwarding:
+
 ```bash
 sudo echo -e '\n#Enable IP Routing\nnet.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
 sudo sysctl -p
@@ -106,8 +107,9 @@ sudo iptables -A FORWARD -i minionebr -o ens32 -j ACCEPT
 ```
 
 
---------------
+- Network context
 
+```bash
 NAME         = "Private"
 VN_MAD       = "bridge"
 BRIDGE       = minionebr
@@ -127,9 +129,15 @@ NETWORK_MASK       = "255.255.255.0"
 GATEWAY            = "172.16.100.1"
 DNS                = "8.8.8.8"
 SEARCH_DOMAIN      = "example.com"
+```
 
---------
+----
 
+
+
+- Ubuntu VM context:
+
+```bash
 CONTEXT = [
   NETWORK = "YES",
   PASSWORD = "3VoKHaXpIZoj0oHAvL6rWA==",
@@ -161,5 +169,5 @@ OS = [
   FIRMWARE = "",
   FIRMWARE_SECURE = "YES" ]
 VCPU = "2"
-
+```
 
