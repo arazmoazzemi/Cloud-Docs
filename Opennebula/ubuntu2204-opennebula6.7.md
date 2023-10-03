@@ -151,12 +151,13 @@ SEARCH_DOMAIN      = "example.com"
 ```bash
 CONTEXT = [
   NETWORK = "YES",
-  PASSWORD = "3VoKHaXpIZoj0oHAvL6rWA==",
+  PASSWORD = "bLf11zZIpZiw4YD4pAy89G1RJ1bYcpZl9sk6AkGuoFU=",
   REPORT_READY = "YES",
   USERNAME = "root" ]
 CPU = "2"
 DISK = [
-  IMAGE_ID = "1" ]
+  IMAGE = "Ubuntu 22.04",
+  IMAGE_UNAME = "oneadmin" ]
 GRAPHICS = [
   LISTEN = "0.0.0.0",
   TYPE = "VNC" ]
@@ -164,13 +165,13 @@ HOT_RESIZE = [
   CPU_HOT_ADD_ENABLED = "NO",
   MEMORY_HOT_ADD_ENABLED = "NO" ]
 HYPERVISOR = "kvm"
-LOGO = "images/logos/linux.png"
+LOGO = "images/logos/ubuntu.png"
 LXD_SECURITY_PRIVILEGED = "true"
 MEMORY = "2048"
 MEMORY_RESIZE_MODE = "BALLOONING"
 MEMORY_UNIT_COST = "MB"
 NIC = [
-  NETWORK = "vnet",
+  NETWORK = "Private",
   NETWORK_UNAME = "oneadmin",
   SECURITY_GROUPS = "0" ]
 NIC_DEFAULT = [
@@ -179,6 +180,8 @@ OS = [
   ARCH = "x86_64",
   FIRMWARE = "",
   FIRMWARE_SECURE = "YES" ]
+SCHED_DS_REQUIREMENTS = "ID=\"0\""
 VCPU = "2"
+
 ```
 
