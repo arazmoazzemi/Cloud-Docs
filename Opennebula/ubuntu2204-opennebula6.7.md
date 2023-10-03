@@ -107,7 +107,7 @@ sudo iptables -A FORWARD -i minionebr -o ens32 -j ACCEPT
 ```
 
 
-- Network context
+- Virtual network context
 
 ```bash
 NAME         = "Private"
