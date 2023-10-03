@@ -151,7 +151,7 @@ SEARCH_DOMAIN      = "example.com"
 ```bash
 CONTEXT = [
   NETWORK = "YES",
-  PASSWORD = "bLf11zZIpZiw4YD4pAy89G1RJ1bYcpZl9sk6AkGuoFU=",
+  PASSWORD = "m7NYJ5JXuBCBmssBp4ecYQ==",
   REPORT_READY = "YES",
   USERNAME = "root" ]
 CPU = "2"
@@ -182,6 +182,7 @@ OS = [
   FIRMWARE_SECURE = "YES" ]
 SCHED_DS_REQUIREMENTS = "ID=\"0\""
 VCPU = "2"
+
 
 ```
 ----
