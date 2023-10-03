@@ -60,7 +60,7 @@ apt-get -y install opennebula-node-kvm
 ```
 ----
 
-### - Add KVMnode with CLI:
+#### - Add KVMnode with CLI:
 
 ```bash
 onehost create <node01> -i kvm -v kvm
