@@ -187,6 +187,7 @@ VCPU = "2"
 ----
 
 USERNAME: root
+
 PASSWORD: password
 
 ----
