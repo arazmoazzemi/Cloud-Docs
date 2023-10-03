@@ -189,6 +189,6 @@ VCPU = "2"
 
 USERNAME: root
 
-PASSWORD: password
+PASSWORD: ubuntu
 
 ----
