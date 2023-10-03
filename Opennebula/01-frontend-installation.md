@@ -134,7 +134,7 @@ network:
       interfaces: [ minionebr-nic ]
 
 
-sudo netplay apply
+sudo netplan apply
 
 ```
 
