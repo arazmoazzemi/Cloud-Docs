@@ -184,4 +184,9 @@ SCHED_DS_REQUIREMENTS = "ID=\"0\""
 VCPU = "2"
 
 ```
+----
 
+USERNAME: root
+PASSWORD: password
+
+----
