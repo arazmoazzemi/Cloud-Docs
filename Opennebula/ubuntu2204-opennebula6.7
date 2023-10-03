@@ -22,12 +22,14 @@ systemctl enable opennebula opennebula-sunstone opennebula-fireedge
 cat /var/lib/one/.one/one_auth
 
 # Change password
-echo 'oneadmin:changeme123' > /var/lib/one/.one/one_auth
+sudo -u oneadmin /bin/sh
+echo 'oneadmin:password' > /var/lib/one/.one/one_auth
+systemctl restart opennebula opennebula-sunstone 
 
 # http://192.168.200.40:9869/
 # http://192.168.200.40:2616/
 
-sudo -u oneadmin /bin/sh
+
 
 
 oneadmin
