@@ -133,8 +133,6 @@ SEARCH_DOMAIN      = "example.com"
 
 ----
 
-
-
 - Ubuntu VM context:
 
 ```bash
