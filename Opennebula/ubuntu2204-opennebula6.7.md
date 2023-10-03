@@ -54,11 +54,17 @@ ssh-copy-id -i /var/lib/one/.ssh/id_rsa.pub cloud
 scp -p /var/lib/one/.ssh/id_rsa <node1>:/var/lib/one/.ssh/
 
 ```
+----
+Make sure that enabled port forwarding:
+
+sudo echo -e '\n#Enable IP Routing\nnet.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf
+sudo sysctl -p
+
+----
 
 - Create a bidge network:
 
 ```bash
-
 
 
 
