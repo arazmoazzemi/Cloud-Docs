@@ -5,7 +5,7 @@ Note! Befor start your stup, Please enable nested virtualization on your hostğŸ˜
 
 ### You can use chrony and set local timezone
 
-- Lets start:
+# - Lets start:
 
 ```bash
 apt-get update -y
