@@ -55,8 +55,12 @@ scp -p /var/lib/one/.ssh/id_rsa <node1>:/var/lib/one/.ssh/
 
 ```
 
+- Create a bidge network:
 
-------------------
+```bash
+
+
+
 
 sudo iptables -F
 sudo iptables -L -v -n | more
@@ -70,6 +74,7 @@ sudo iptables -t nat -A POSTROUTING -o ens33 -j MASQUERADE
 sudo iptables -A FORWARD -i ens33 -o minionebr -m state --state RELATED,ESTABLISHED -j ACCEPT
 sudo iptables -A FORWARD -i minionebr -o ens33 -j ACCEPT
 
+```
 
 
 --------------
