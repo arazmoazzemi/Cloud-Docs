@@ -94,7 +94,7 @@ network:
       addresses: [ 172.16.100.1/24 ]
       interfaces: [ minionebr-nic ]
 
-
+# Apply network changes
 sudo netplan apply
 ```
 
