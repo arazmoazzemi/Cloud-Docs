@@ -89,7 +89,7 @@ sudo netplan apply
 ```
 
 - Enable Nat for minione interface:
-- 
+
 ```bash
 sudo iptables -F
 sudo iptables -L -v -n | more
