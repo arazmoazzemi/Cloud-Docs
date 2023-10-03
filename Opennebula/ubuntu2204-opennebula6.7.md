@@ -9,6 +9,8 @@ Note! Befor start your stup, Please enable nested virtualization on your hostðŸ˜
 apt-get update -y
 apt-get upgrade -y
 
+ssh-keygen -t rsa -b 2048
+
 apt-get -y install gnupg wget apt-transport-https
 wget -q -O- https://downloads.opennebula.io/repo/repo2.key | apt-key add -
 echo "deb https://downloads.opennebula.io/repo/6.7/Ubuntu/22.04 stable opennebula" > /etc/apt/sources.list.d/opennebula.list
