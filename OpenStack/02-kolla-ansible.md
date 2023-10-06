@@ -39,6 +39,7 @@ Let's go:
 
 sudo apt update -y
 sudo apt upgrade -y
+apt-get install python3-docker -y
 sudo apt install git python3-dev libffi-dev gcc libssl-dev -y
 sudo apt install python3-venv -y
 
