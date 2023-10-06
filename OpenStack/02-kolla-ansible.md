@@ -126,12 +126,10 @@ vgcreate vg0 /dev/sdb
 
 ```bash
 kolla-ansible -i ./all-in-one bootstrap-servers
-Do pre-deployment checks for hosts:
 ```
 
 ```bash
 kolla-ansible -i ./all-in-one prechecks
-Finally proceed to actual OpenStack deployment:
 ```
 
 ```bash
