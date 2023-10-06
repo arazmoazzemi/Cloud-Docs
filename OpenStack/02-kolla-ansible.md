@@ -44,15 +44,18 @@ cat all-in-one
 ```
 
 ### Install Ansible Galaxy requirements:
-
 ```bash
 kolla-ansible install-deps
+```
 
-# Configuration
-
+### Kolla passwords:
+```bash
 kolla-genpwd
 cat /etc/kolla/passwords.yml
+```
 
+### Kolla globals.yml:
+```bash
 kolla_base_distro: "rocky"
 
 openstack_tag_suffix: "-aarch64"
