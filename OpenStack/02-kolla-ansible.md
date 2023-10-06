@@ -76,6 +76,8 @@ cat /etc/kolla/passwords.yml
 ### Kolla globals.yml:
 ```bash
 ls /etc/kolla
+cp /etc/kolla/globals.yml /etc/kolla/globals.yml.orig
+
 
 nano /etc/kolla/globals.yml
 
