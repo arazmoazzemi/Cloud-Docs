@@ -7,11 +7,11 @@
 
 ### Host machine requirements
 
-***2 network interfaces***
+- ***2 network interfaces***
 
-***8GB main memory***
+- ***8GB main memory***
 
-***40GB disk space***
+- ***40GB disk space***
 
 
 
