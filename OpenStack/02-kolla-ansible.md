@@ -4,6 +4,25 @@
 
 - ***[quickstart-guide](https://docs.openstack.org/kolla-ansible/latest/user/quickstart.html)***
 
+#### Use below DNS for limited connections:😔
+#### DNS1:  185.55.225.25 
+#### DNS2:  185.55.226.26
+> OR
+
+```bash
+systemctl stop systemd-resolved
+systemctl mask systemd-resolved
+rm /etc/resolv.conf
+
+cat <<EOF > /etc/resolv.conf
+nameserver 10.202.10.202
+nameserver 10.202.10.102
+EO
+``` 
+##### DNS1:  10.202.10.202   
+##### DNS2:  10.202.10.102
+
+----
 
 ### Host machine requirements:
 
