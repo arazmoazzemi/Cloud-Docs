@@ -55,6 +55,13 @@ cat /etc/kolla/passwords.yml
 
 kolla_base_distro: "rocky"
 
+openstack_tag_suffix: "-aarch64"
+
+network_interface: "eth0"
+
+neutron_external_interface: "eth1"
+
+kolla_internal_vip_address: "10.1.0.250"
 
 ```
 
