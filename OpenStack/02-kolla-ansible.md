@@ -21,14 +21,12 @@ Let's go:
 sudo apt update -y
 sudo apt upgrade -y
 
-sudo apt install git python3-dev libffi-dev gcc libssl-dev
+sudo apt install git python3-dev libffi-dev gcc libssl-dev -y
 
-sudo apt install python3-venv
+sudo apt install python3-venv -y
 
-
-python3 -m venv /path/to/venv
-source /path/to/venv/bin/activate
-
+python3 -m venv ./openstack
+source openstack/bin/activate
 
 pip install -U pip
 
