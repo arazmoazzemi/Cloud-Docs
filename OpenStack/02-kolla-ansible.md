@@ -73,8 +73,8 @@ kolla_internal_vip_address: "10.1.0.250"
 
 ```
 
-
-
+# Create volume group
+vgcreate vg0 /dev/sdb
 
 
 
