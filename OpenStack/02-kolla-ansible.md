@@ -5,7 +5,7 @@
 - ***[quickstart-guide](https://docs.openstack.org/kolla-ansible/latest/user/quickstart.html)***
 
 
-### Host machine requirements
+### Host machine requirements:
 
 - ***2 network interfaces***
 
@@ -14,6 +14,9 @@
 - ***40GB disk space***
 
 
+Let's go:
+
+```bash
 
 sudo apt update
 
@@ -50,3 +53,4 @@ cp /path/to/venv/share/kolla-ansible/ansible/inventory/all-in-one .
 
 
 
+```
