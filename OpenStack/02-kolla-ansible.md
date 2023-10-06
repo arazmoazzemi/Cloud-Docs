@@ -118,9 +118,25 @@ neutron_ovn_dhcp_agent: "yes"
 ```
 
 # Create volume group
+```bash
 vgcreate vg0 /dev/sdb
+```
 
+# Deployment:
 
+```bash
+kolla-ansible -i ./all-in-one bootstrap-servers
+Do pre-deployment checks for hosts:
+```
+
+```bash
+kolla-ansible -i ./all-in-one prechecks
+Finally proceed to actual OpenStack deployment:
+```
+
+```bash
+kolla-ansible -i ./all-in-one deploy
+```
 
 
 
