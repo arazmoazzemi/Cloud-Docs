@@ -15,8 +15,8 @@ systemctl mask systemd-resolved
 rm /etc/resolv.conf
 
 cat <<EOF > /etc/resolv.conf
-nameserver 10.202.10.202
-nameserver 10.202.10.102
+nameserver 178.22.122.100
+nameserver 185.51.200.2
 EOF
 ``` 
 ##### DNS1:  10.202.10.202   
