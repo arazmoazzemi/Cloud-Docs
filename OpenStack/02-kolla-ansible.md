@@ -30,21 +30,14 @@ source openstack/bin/activate
 
 pip install -U pip
 
-
-
 pip install 'ansible>=6,<8'
 
-
 pip install git+https://opendev.org/openstack/kolla-ansible@master
-
 
 sudo mkdir -p /etc/kolla
 sudo chown $USER:$USER /etc/kolla
 
-
-
 cp -r /path/to/venv/share/kolla-ansible/etc_examples/kolla/* /etc/kolla
-
 
 cp /path/to/venv/share/kolla-ansible/ansible/inventory/all-in-one .
 
