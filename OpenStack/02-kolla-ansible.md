@@ -47,4 +47,46 @@ cat all-in-one
 
 ```bash
 kolla-ansible install-deps
+
+# Configuration
+
+kolla-genpwd
+/etc/kolla/passwords.yml
+
+
+
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
