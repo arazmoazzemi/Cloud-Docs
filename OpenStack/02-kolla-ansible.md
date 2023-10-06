@@ -56,6 +56,11 @@ cat /etc/kolla/passwords.yml
 
 ### Kolla globals.yml:
 ```bash
+ls /etc/kolla
+
+nano globals.yml
+
+
 kolla_base_distro: "rocky"
 
 openstack_tag_suffix: "-aarch64"
