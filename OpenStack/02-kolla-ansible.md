@@ -51,8 +51,9 @@ kolla-ansible install-deps
 # Configuration
 
 kolla-genpwd
-/etc/kolla/passwords.yml
+cat /etc/kolla/passwords.yml
 
+kolla_base_distro: "rocky"
 
 
 ```
