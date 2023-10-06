@@ -1,8 +1,8 @@
-# Install openstal with kolla-ansible:
+# Install openstack with kolla-ansible:
 
-[]https://docs.openstack.org/kolla-ansible/latest/
+[kolla-ansible-latest](https://docs.openstack.org/kolla-ansible/latest/)
 
-https://docs.openstack.org/kolla-ansible/latest/user/quickstart.html
+[quickstart-guide](https://docs.openstack.org/kolla-ansible/latest/user/quickstart.html)
 
 
 
