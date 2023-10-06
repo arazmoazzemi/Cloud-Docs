@@ -5,15 +5,11 @@
 - ***[quickstart-guide](https://docs.openstack.org/kolla-ansible/latest/user/quickstart.html)***
 
 
+### Host machine requirements
 
-Host machine requirements
-The host machine must satisfy the following minimum requirements:
-
-2 network interfaces
-
-8GB main memory
-
-40GB disk space
+***2 network interfaces***
+***8GB main memory***
+***40GB disk space***
 
 
 
