@@ -18,7 +18,8 @@ Let's go:
 
 ```bash
 
-sudo apt update
+sudo apt update -y
+sudo apt upgrade -y
 
 sudo apt install git python3-dev libffi-dev gcc libssl-dev
 
