@@ -20,19 +20,19 @@ Let's go:
 
 sudo apt update -y
 sudo apt upgrade -y
-
 sudo apt install git python3-dev libffi-dev gcc libssl-dev -y
-
 sudo apt install python3-venv -y
 
 python3 -m venv ./openstack
 source openstack/bin/activate
 
 pip install -U pip
-
 pip install 'ansible>=6,<8'
-
 pip install git+https://opendev.org/openstack/kolla-ansible@master
+
+ls openstack/share/kolla-ansible/
+
+
 
 sudo mkdir -p /etc/kolla
 sudo chown $USER:$USER /etc/kolla
