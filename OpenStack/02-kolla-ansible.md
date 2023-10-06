@@ -60,16 +60,60 @@ ls /etc/kolla
 
 nano globals.yml
 
+workaround_ansible_issue_8743: yes
 
-kolla_base_distro: "rocky"
+kolla_base_distro: "ubuntu"
 
-openstack_tag_suffix: "-aarch64"
+openstack_release: "bobcat"
 
-network_interface: "eth0"
+kolla_internal_vip_address: "192.168.200.12"
 
-neutron_external_interface: "eth1"
+kolla_internal_fqdn: "{{ kolla_internal_vip_address }}"
 
-kolla_internal_vip_address: "10.1.0.250"
+kolla_external_vip_address: "{{ kolla_internal_vip_address }}"
+
+kolla_sysctl_conf_path: /etc/sysctl.conf
+
+network_interface: "ens32"
+
+network_address_family: "ipv4"
+
+neutron_external_interface: "ens33"
+
+neutron_plugin_agent: "ovn"
+
+keepalived_virtual_router_id: "51"
+
+disable_firewall: "true"
+
+openstack_region_name: "RegionOne"
+
+enable_openstack_core: "yes"
+
+enable_mariadb: "yes"
+
+enable_cinder: "yes"
+
+enable_cinder_backup: "yes"
+
+enable_cinder_backend_lvm: "yes"
+
+glance_backend_ceph: "yes"
+
+cinder_volume_group: "Vg0"
+
+cinder_backup_driver: "nfs"
+
+cinder_backup_share: "192.168.200.12:/root/nfs"
+
+nova_compute_virt_type: "kvm"
+
+nova_console: "spice"
+
+neutron_ovn_distributed_fip: "yes"
+
+neutron_ovn_dhcp_agent: "yes"
+
 
 ```
 
