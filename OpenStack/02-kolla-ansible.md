@@ -133,17 +133,29 @@ neutron_ovn_distributed_fip: "yes"
 
 neutron_ovn_dhcp_agent: "yes"
 
-
 ```
+
+----
 
 # Create volume group
 ```bash
 vgcreate vg0 /dev/sdb
 ```
 
+----
+
 # Deployment:
 
 ```bash
+kolla-ansible -i ./all-in-one bootstrap-servers
+```
+
+# If get error with firewall deactive env and run:
+
+```bash
+ufw enable
+source openstack/bin/activate
+
 kolla-ansible -i ./all-in-one bootstrap-servers
 ```
 
