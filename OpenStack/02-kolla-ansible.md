@@ -77,7 +77,7 @@ cat /etc/kolla/passwords.yml
 ```bash
 ls /etc/kolla
 
-nano globals.yml
+nano /etc/kolla/globals.yml
 
 workaround_ansible_issue_8743: yes
 
