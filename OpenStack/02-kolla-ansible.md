@@ -41,5 +41,10 @@ cp  openstack/share/kolla-ansible/ansible/inventory/all-in-one .
 
 cat all-in-one
 
+```
 
+### Install Ansible Galaxy requirements:
+
+```bash
+kolla-ansible install-deps
 ```
