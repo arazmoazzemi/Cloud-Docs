@@ -39,6 +39,7 @@ sudo chown $USER:$USER /etc/kolla
 cp -r /root/openstack/share/kolla-ansible/etc_examples/kolla/* /etc/kolla
 cp  openstack/share/kolla-ansible/ansible/inventory/all-in-one .
 
+cat all-in-one
 
 
 ```
