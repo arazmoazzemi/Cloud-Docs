@@ -37,7 +37,7 @@ sudo mkdir -p /etc/kolla
 sudo chown $USER:$USER /etc/kolla
 
 cp -r /root/openstack/share/kolla-ansible/etc_examples/kolla/* /etc/kolla
-cp /path/to/venv/share/kolla-ansible/ansible/inventory/all-in-one .
+cp  openstack/share/kolla-ansible/ansible/inventory/all-in-one .
 
 
 
