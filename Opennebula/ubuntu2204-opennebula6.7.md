@@ -149,7 +149,7 @@ SEARCH_DOMAIN      = "example.com"
 ```bash
 CONTEXT = [
   NETWORK = "YES",
-  PASSWORD = "m7NYJ5JXuBCBmssBp4ecYQ==",
+  PASSWORD = "ubuntu",
   REPORT_READY = "YES",
   USERNAME = "root" ]
 CPU = "2"
