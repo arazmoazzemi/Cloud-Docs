@@ -140,7 +140,7 @@ neutron_ovn_dhcp_agent: "yes"
 
 ----
 
-# Create volume group
+### Create a volume group
 ```bash
 vgcreate vg0 /dev/sdb
 ```
