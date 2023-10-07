@@ -50,7 +50,9 @@ source openstack/bin/activate
 
 pip install -U pip
 pip install 'ansible>=6,<8'
+# pip install 'ansible>=4,<6'
 pip install git+https://opendev.org/openstack/kolla-ansible@master
+# git clone --branch master https://opendev.org/openstack/kolla-ansible
 
 ls openstack/share/kolla-ansible/
 
