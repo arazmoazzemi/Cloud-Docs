@@ -1,5 +1,7 @@
 # Install openstack with kolla-ansible:
 
+- ***[kolla-ansible-developers](https://docs.openstack.org/kolla-ansible/latest/user/quickstart-development.html)***
+
 - ***[kolla-ansible-latest](https://docs.openstack.org/kolla-ansible/latest/)***
 
 - ***[quickstart-guide](https://docs.openstack.org/kolla-ansible/latest/user/quickstart.html)***
