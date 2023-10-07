@@ -90,7 +90,7 @@ workaround_ansible_issue_8743: yes
 
 kolla_base_distro: "ubuntu"
 
-openstack_release: "bobcat"
+openstack_release: "zed"
 
 kolla_internal_vip_address: "192.168.200.12"
 
