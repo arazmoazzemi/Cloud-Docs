@@ -189,3 +189,14 @@ USERNAME: root
 PASSWORD: ubuntu
 
 ----
+
+LVM disk resize
+
+```bash
+pvresize /dev/vda3
+
+lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+
+resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
+
+```
