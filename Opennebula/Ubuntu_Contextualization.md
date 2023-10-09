@@ -3,7 +3,7 @@
 ```
 CONTEXT = [
   NETWORK = "YES",
-  PASSWORD = "3VoKHaXpIZoj0oHAvL6rWA==",
+  PASSWORD = "password",
   REPORT_READY = "YES",
   USERNAME = "root" ]
 CPU = "2"
