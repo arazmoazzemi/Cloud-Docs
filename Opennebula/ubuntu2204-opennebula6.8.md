@@ -11,7 +11,7 @@ Note! Before start your steps to stup, Please enable nested virtualization on yo
 sudo apt-get update -y
 sudo apt-get upgrade -y
 
-ssh-keygen -t rsa -b 2048
+sudo ssh-keygen -t rsa -b 2048
 
 sudo apt-get -y install gnupg wget apt-transport-https
 wget -q -O- https://downloads.opennebula.io/repo/repo2.key | apt-key add -
