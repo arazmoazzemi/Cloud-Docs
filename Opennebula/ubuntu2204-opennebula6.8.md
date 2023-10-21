@@ -9,20 +9,21 @@ Also,
 #### - Let's start:
 
 ```bash
-sudo apt-get update -y
-sudo apt-get upgrade -y
+sudo su -
+apt-get update -y
+apt-get upgrade -y
 
-sudo ssh-keygen -t rsa -b 2048
+ssh-keygen -t rsa -b 2048
 
-sudo apt-get -y install gnupg wget apt-transport-https
-sudo wget -q -O- https://downloads.opennebula.io/repo/repo2.key | apt-key add -
-sudo echo "deb https://downloads.opennebula.io/repo/6.8/Ubuntu/22.04 stable opennebula" > /etc/apt/sources.list.d/opennebula.list
-sudo apt-get update -y
+apt-get -y install gnupg wget apt-transport-https
+wget -q -O- https://downloads.opennebula.io/repo/repo2.key | apt-key add -
+echo "deb https://downloads.opennebula.io/repo/6.8/Ubuntu/22.04 stable opennebula" > /etc/apt/sources.list.d/opennebula.list
+apt-get update -y
 
-sudo apt-get -y install opennebula opennebula-sunstone opennebula-fireedge opennebula-gate opennebula-flow opennebula-provision
+apt-get -y install opennebula opennebula-sunstone opennebula-fireedge opennebula-gate opennebula-flow opennebula-provision
 
-sudo systemctl start opennebula opennebula-sunstone opennebula-fireedge opennebula-gate opennebula-flow
-sudo systemctl enable opennebula opennebula-sunstone opennebula-fireedge 
+systemctl start opennebula opennebula-sunstone opennebula-fireedge opennebula-gate opennebula-flow
+systemctl enable opennebula opennebula-sunstone opennebula-fireedge 
 
 # show password
 cat /var/lib/one/.one/one_auth
