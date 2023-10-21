@@ -8,20 +8,20 @@ Note! Before start your steps to stup, Please enable nested virtualization on yo
 #### - Let's start:
 
 ```bash
-apt-get update -y
-apt-get upgrade -y
+sudo apt-get update -y
+sudo apt-get upgrade -y
 
 ssh-keygen -t rsa -b 2048
 
-apt-get -y install gnupg wget apt-transport-https
+sudo apt-get -y install gnupg wget apt-transport-https
 wget -q -O- https://downloads.opennebula.io/repo/repo2.key | apt-key add -
 echo "deb https://downloads.opennebula.io/repo/6.8/Ubuntu/22.04 stable opennebula" > /etc/apt/sources.list.d/opennebula.list
-apt-get update -y
+sudo apt-get update -y
 
-apt-get -y install opennebula opennebula-sunstone opennebula-fireedge opennebula-gate opennebula-flow opennebula-provision
+sudo apt-get -y install opennebula opennebula-sunstone opennebula-fireedge opennebula-gate opennebula-flow opennebula-provision
 
-systemctl start opennebula opennebula-sunstone opennebula-fireedge opennebula-gate opennebula-flow
-systemctl enable opennebula opennebula-sunstone opennebula-fireedge 
+sudo systemctl start opennebula opennebula-sunstone opennebula-fireedge opennebula-gate opennebula-flow
+sudo systemctl enable opennebula opennebula-sunstone opennebula-fireedge 
 
 # show password
 cat /var/lib/one/.one/one_auth
