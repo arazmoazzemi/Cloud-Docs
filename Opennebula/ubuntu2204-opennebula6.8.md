@@ -1,7 +1,7 @@
 ### Install opennebula 6.8 (❁´◡`❁)  on ubuntu 22.04.3 ❤
 
 ----
-### Note! Before start your steps to stup, Please enable nested virtualization on your host😊
+### Important Note! Before start your steps to stup, Please enable nested virtualization on your host😊
 ----
 Also,
 ### You can use chrony and set local timezone
