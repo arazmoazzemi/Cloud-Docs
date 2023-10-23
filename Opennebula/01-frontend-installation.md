@@ -68,7 +68,6 @@ sudo nano /etc/hostname
 
 ```
 
-
 **Very Important Note!** Just use oneadmin keys
 
 Make sure that authenticated keys created by **oneadmin** user and exists on **/var/lib/one/.ssh** folder on compute host (kvm01) 
