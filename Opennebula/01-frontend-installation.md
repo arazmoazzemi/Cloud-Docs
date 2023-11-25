@@ -1,4 +1,4 @@
-# Install opennebula6.8 fronend kvm ubuntu22.04.3
+# Install opennebula_6.8 fronend kvm ubuntu_22.04.3
 #### [Docs](https://docs.opennebula.io/6.8/installation_and_configuration/frontend_installation/opennebula_repository_configuration.html)
 
 __Install easy way__ 🙋‍♂️
