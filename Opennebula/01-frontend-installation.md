@@ -1,7 +1,7 @@
 # Install opennebula fronend kvm ubuntu22.04.3
 #### [Docs](https://docs.opennebula.io/6.8/installation_and_configuration/frontend_installation/opennebula_repository_configuration.html)
 
-__Install easy way__
+__Install easy way__ 🙋‍♂️
 
 #### Note! Opennebula minione way installation, needed least 30G disk or 20G free disk space for /var/ folder
 
@@ -30,7 +30,7 @@ sudo apt-get -y install opennebula-node-kvm
 sudo systemctl restart libvirtd
 ```
 
-* 03-Get both, Frontend and KVM Node Cloud for evaluation ---> run on **evaluation** node
+* 03-Get both, Frontend and KVM Node Cloud for evaluation ---> run on **evaluation** node 👨‍🎓
 
 Run the following commands to deploy an evaluation cloud with a front-end and a single KVM node:
 
