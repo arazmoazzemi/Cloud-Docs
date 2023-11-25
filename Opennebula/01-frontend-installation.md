@@ -15,7 +15,7 @@ sudo wget 'https://github.com/OpenNebula/minione/releases/latest/download/minion
 sudo bash minione --frontend
 ```
 
-* 02-Get opennebula-node-kvm Only for **edge** nodes ---> run only on **compute** node
+* 02-Get opennebula-node-kvm only for **edge** nodes ---> Run only on **compute** node
   
 ```bash
 sudo su -
