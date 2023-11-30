@@ -40,11 +40,10 @@ source admin_openrc
 openstack catalog list
 ```
 
-
+```bash
 sunbeam configure --accept-defaults --openrc demo-openrc 
-
 sunbeam launch ubuntu -n test
-
+```
 
 ----------
 
