@@ -7,12 +7,11 @@ sudo apt-get update -y && sudo apt-get upgrade -y
 ssh-keygen -t rsa -b 2048
 ```
 
-
+```bash
 sudo snap install openstack
-
 sunbeam prepare-node-script | bash -x && newgrp snap_daemon
-
 sunbeam cluster bootstrap --accept-defaults
+```
 
 snap list
 
