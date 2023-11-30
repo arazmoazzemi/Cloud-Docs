@@ -45,13 +45,12 @@ sunbeam configure --accept-defaults --openrc demo-openrc
 sunbeam launch ubuntu -n test
 ```
 
-----------
-
+```basg
 ssh <>
 
 uptime
 exit
-
+```
 
 sunbeam dashboard_url
 
