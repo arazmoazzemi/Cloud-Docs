@@ -30,9 +30,12 @@ sudo microk8s.kubectl get pods -n openstack
 sudo microk8s.kubectl describe pods glance-0 -n openstack
 ```
 
+```bash
 sunbeam openrc > admin_openrc
 cat admin_openrc
 source admin_openrc
+```
+
 
 openstack catalog list
 
