@@ -13,7 +13,10 @@ sunbeam prepare-node-script | bash -x && newgrp snap_daemon
 sunbeam cluster bootstrap --accept-defaults
 ```
 
+```bash
 snap list
+```
+
 
 juju controllers
 juju models
