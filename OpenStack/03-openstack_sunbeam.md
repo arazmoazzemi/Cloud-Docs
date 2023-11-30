@@ -17,18 +17,18 @@ sunbeam cluster bootstrap --accept-defaults
 snap list
 ```
 
-````bash
+```bash
 juju controllers
 juju models
 juju switch openstack 
 juju status
 ```
 
-
+```bash
 sudo microk8s.kubectl get namespaces
 sudo microk8s.kubectl get pods -n openstack
 sudo microk8s.kubectl describe pods glance-0 -n openstack
-
+```
 
 sunbeam openrc > admin_openrc
 cat admin_openrc
