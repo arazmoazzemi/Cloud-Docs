@@ -36,9 +36,9 @@ cat admin_openrc
 source admin_openrc
 ```
 
-
+```bash
 openstack catalog list
-
+```
 
 
 sunbeam configure --accept-defaults --openrc demo-openrc 
