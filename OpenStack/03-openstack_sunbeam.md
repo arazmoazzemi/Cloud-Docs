@@ -1,12 +1,11 @@
 # OpenStack sunbeam
 
 #### [How to Install OpenStack in five simple steps | OpenStack tutorial for beginners | Ubuntu LTS](https://www.youtube.com/watch?v=ifDtBM_EHPE)
-[Youtube link])
 
+```bash
 sudo apt-get update -y && sudo apt-get upgrade -y
-
 ssh-keygen -t rsa -b 2048
-
+```
 
 
 sudo snap install openstack
