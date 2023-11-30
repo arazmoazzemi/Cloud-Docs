@@ -1,7 +1,6 @@
 # OpenStack sunbeam
 
-
-https://www.youtube.com/watch?v=ifDtBM_EHPE
+[Youtube link](https://www.youtube.com/watch?v=ifDtBM_EHPE)
 
 sudo apt-get update -y && sudo apt-get upgrade -y
 
