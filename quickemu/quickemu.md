@@ -1,5 +1,8 @@
+
+```bash
 quickget ubuntu-mate 22.04
 quickemu --vm ubuntu-mate-22.04.conf  --display spice
+```
 
 quickemu --vm ubuntu-mate-22.04.conf --braille --display sdl
 
