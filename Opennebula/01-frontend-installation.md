@@ -162,7 +162,6 @@ sudo iptables -A FORWARD -i minionebr -o ens32 -j ACCEPT
 
 ```
 
-
 *Context example for ubuntu22.04 images*
 
 ```bash
