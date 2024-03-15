@@ -5,6 +5,7 @@ apt-get install bridge-utils -y
 brctl addbr cloudpr
 ```
 
+### Create a virtual nic interface for private VMs
 ```bash
 touch cloudpr.yaml
 
