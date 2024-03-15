@@ -151,12 +151,13 @@ SEARCH_DOMAIN      = "example.com"
 ```bash
 CONTEXT = [
   NETWORK = "YES",
-  PASSWORD = "ubuntu",
+  PASSWORD = "zEqiMnYdzipcBAtlsT3Mxw==",
   REPORT_READY = "YES",
   USERNAME = "root" ]
 CPU = "2"
 DISK = [
   IMAGE = "Ubuntu 22.04",
+  IMAGE_ID = "0",
   IMAGE_UNAME = "oneadmin" ]
 GRAPHICS = [
   LISTEN = "0.0.0.0",
@@ -182,6 +183,7 @@ OS = [
   FIRMWARE_SECURE = "YES" ]
 SCHED_DS_REQUIREMENTS = "ID=\"0\""
 VCPU = "2"
+
 
 ```
 ----
