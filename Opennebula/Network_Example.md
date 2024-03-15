@@ -5,7 +5,7 @@ apt-get install bridge-utils -y
 brctl addbr cloudpr
 ```
 
-```
+```bash
 touch cloudpr.yaml
 
 # This is the network config written by 'subiquity'
@@ -22,7 +22,7 @@ network:
       interfaces: [ cloudpr-nic ]
 ```
 
-```
+```bash
 sudo iptables -t nat -A POSTROUTING -o eno1 -j MASQUERADE
 sudo iptables -A FORWARD -i eno1 -o cloudpr -m state --state RELATED,ESTABLISHED -j ACCEPT
 sudo iptables -A FORWARD -i cloudpr -o eno1 -j ACCEPT
@@ -31,7 +31,7 @@ sudo iptables -A FORWARD -i cloudpr -o eno1 -j ACCEPT
 
 
 ### Opennebula Virtual Network context
-```
+```bash
 BRIDGE = "cloudpr"
 BRIDGE_TYPE = "linux"
 DNS = "8.8.8.8"
