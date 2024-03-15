@@ -31,7 +31,7 @@ sudo iptables -A FORWARD -i cloudpr -o eno1 -j ACCEPT
 
 
 ### Opennebula Virtual Network context
-
+```
 BRIDGE = "cloudpr"
 BRIDGE_TYPE = "linux"
 DNS = "8.8.8.8"
@@ -43,4 +43,4 @@ PHYDEV = ""
 SECURITY_GROUPS = "0"
 VLAN_ID = ""
 VN_MAD = "bridge"
-
+```
