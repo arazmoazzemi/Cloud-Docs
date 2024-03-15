@@ -30,7 +30,7 @@ sudo iptables -A FORWARD -i cloudpr -o eno1 -j ACCEPT
 
 
 
-----------------------Opennebula Virtual Network context--------------------------------
+### Opennebula Virtual Network context
 
 BRIDGE = "cloudpr"
 BRIDGE_TYPE = "linux"
