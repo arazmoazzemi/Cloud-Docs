@@ -36,8 +36,9 @@
 :one:[DevStack Installaton](https://docs.openstack.org/devstack/latest/guides/single-machine.html) Guide:
 
 ```sh
-sudo useradd -s /bin/bash -d /opt/stack -m stack
-sudo chmod +x /opt/stack
+sudo su -
+useradd -s /bin/bash -d /opt/stack -m stack
+chmod +x /opt/stack
 apt-get install sudo -y || yum install -y sudo
 echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack
 
