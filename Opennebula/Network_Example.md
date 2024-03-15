@@ -1,5 +1,4 @@
--------------------------------------
-
+### Opennebula Virtual Network Example
 
 apt-get install bridge-utils -y
 brctl addbr cloudpr
