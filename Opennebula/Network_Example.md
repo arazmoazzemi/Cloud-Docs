@@ -22,14 +22,11 @@ network:
       interfaces: [ cloudpr-nic ]
 ```
 
-
-
-
-
+```
 sudo iptables -t nat -A POSTROUTING -o eno1 -j MASQUERADE
 sudo iptables -A FORWARD -i eno1 -o cloudpr -m state --state RELATED,ESTABLISHED -j ACCEPT
 sudo iptables -A FORWARD -i cloudpr -o eno1 -j ACCEPT
-
+```
 
 
 
