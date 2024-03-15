@@ -5,7 +5,7 @@ apt-get install bridge-utils -y
 brctl addbr cloudpr
 ```
 
--------------------------------------
+```
 touch cloudpr.yaml
 
 # This is the network config written by 'subiquity'
@@ -20,7 +20,7 @@ network:
         true
       addresses: [ 172.16.100.1/24 ]
       interfaces: [ cloudpr-nic ]
-
+```
 ---------------------------------------------------
 
 
