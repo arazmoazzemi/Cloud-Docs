@@ -28,8 +28,6 @@ sudo iptables -A FORWARD -i eno1 -o cloudpr -m state --state RELATED,ESTABLISHED
 sudo iptables -A FORWARD -i cloudpr -o eno1 -j ACCEPT
 ```
 
-
-
 ### Opennebula Virtual Network context
 ```bash
 BRIDGE = "cloudpr"
