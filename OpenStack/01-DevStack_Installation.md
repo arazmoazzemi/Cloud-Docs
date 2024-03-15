@@ -47,6 +47,7 @@ echo "stack ALL=(ALL) NOPASSWD: ALL" | sudo tee /etc/sudoers.d/stack
 *Note! From here on you should use the user you created. Logout and login as that user:*
 
 ```sh
+sudo su -
 su - stack
 sudo apt-get install git -y || sudo yum install -y git
 git clone https://opendev.org/openstack/devstack
