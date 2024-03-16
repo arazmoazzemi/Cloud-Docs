@@ -151,7 +151,7 @@ SEARCH_DOMAIN      = "example.com"
 ```bash
 CONTEXT = [
   NETWORK = "YES",
-  PASSWORD = "zEqiMnYdzipcBAtlsT3Mxw==",
+  PASSWORD = "password",
   REPORT_READY = "YES",
   USERNAME = "root" ]
 CPU = "2"
@@ -190,7 +190,7 @@ VCPU = "2"
 
 USERNAME: root
 
-PASSWORD: ubuntu
+PASSWORD: password
 
 ----
 
