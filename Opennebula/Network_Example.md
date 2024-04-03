@@ -35,15 +35,23 @@ sudo iptables -A FORWARD -i cloudpr -o eno1 -j ACCEPT
 
 ### Opennebula Virtual Network context
 ```bash
-BRIDGE = "cloudpr"
-BRIDGE_TYPE = "linux"
-DNS = "8.8.8.8"
-GATEWAY = "172.16.100.1"
-NETWORK_ADDRESS = "172.16.100.0"
-NETWORK_MASK = "255.255.255.0"
-OUTER_VLAN_ID = ""
-PHYDEV = ""
-SECURITY_GROUPS = "0"
-VLAN_ID = ""
-VN_MAD = "bridge"
+NAME         = "Private"
+VN_MAD       = "bridge"
+BRIDGE       = minionebr
+DESCRIPTION  = "A private network for VM inter-communication"
+
+#Address Ranges, only these addresses will be assigned to the VMs
+AR=[
+    TYPE = "IP4",
+    IP   = "172.16.100.2",
+    SIZE = "100"
+]
+
+
+# Context attributes
+NETWORK_ADDRESS    = "172.16.100.0"
+NETWORK_MASK       = "255.255.255.0"
+GATEWAY            = "172.16.100.1"
+DNS                = "8.8.8.8"
+SEARCH_DOMAIN      = "example.com"
 ```
