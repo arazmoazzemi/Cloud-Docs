@@ -55,3 +55,28 @@ GATEWAY            = "172.16.100.1"
 DNS                = "8.8.8.8"
 SEARCH_DOMAIN      = "example.com"
 ```
+
+### Other example:
+
+```bash
+NAME         = "maaspr"
+VN_MAD       = "bridge"
+BRIDGE       = "maaspr"
+DESCRIPTION  = "A private network for MAAS test inter-communication"
+
+#Address Ranges, only these addresses will be assigned to the VMs
+AR=[
+    TYPE = "IP4",
+    IP   = "10.20.30.2",
+    SIZE = "100"
+]
+
+
+# Context attributes
+NETWORK_ADDRESS    = "10.20.30.0"
+NETWORK_MASK       = "255.255.255.0"
+GATEWAY            = "10.20.30.1"
+DNS                = "8.8.8.8"
+SEARCH_DOMAIN      = "example.com"
+
+```
